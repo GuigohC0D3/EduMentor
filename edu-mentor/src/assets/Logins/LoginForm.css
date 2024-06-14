@@ -24,7 +24,8 @@ body {
 section {
   position: relative;
   max-width: 400px;
-  background-color: transparent;
+  background: linear-gradient(to bottom, #13293d, #247ba0, #006494);
+    backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   -webkit-backdrop-filter: blur(55px);
@@ -47,6 +48,14 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-weight: bold;
+}
+
+p {
+  color: #fff;
+
+}
 #container {
   box-sizing: border-box;
   border-radius: 8px;
@@ -140,9 +149,46 @@ input:valid~label {
   color: #ffffff;
 }
 
+.recall-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14.5px;
+  margin: -15px 0 15px;
+}
+
+.recall-forget a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600px;
+  margin-left: 190px;
+  font-weight: bold;
+  white-space: nowrap;
+  position: absolute;
+  top: 454px;
+  cursor: pointer;
+}
+
+.recall-forget a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+.create-forget a {
+  color: #fff;
+  position: center;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-forget a:hover {
+  text-decoration: underline;
+  color: #fff;
+}
 input[type="checkbox"] {
   width: 29px;
   height: 10px;
+  margin-left: 8px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -188,7 +234,7 @@ button {
   width: 100%;
   height: 40px;
   border-radius: 40px;
-  background-color: rgb(255, 255, 255, 1);
+  background-color: rgb(0, 0, 0);
   border: none;
   outline: none;
   cursor: pointer;
@@ -197,6 +243,7 @@ button {
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  margin-bottom: 17px;
 }
 
 button:hover {

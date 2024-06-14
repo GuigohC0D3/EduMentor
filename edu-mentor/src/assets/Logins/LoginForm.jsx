@@ -7,7 +7,7 @@ const LoginForm = () => {
       <h1 id="title">EDUMENTOR</h1>
       <section>
         <form>
-          <h1>Login</h1>
+          <h1>Login do Aluno</h1>
           <div class="inputbox">
             <input type="text" required />
             <label for="">User Name</label>
@@ -23,11 +23,22 @@ const LoginForm = () => {
           <div class="forget">
             <label for="">
               <input type="checkbox" />
-              Remember me
+              <h4>Remember me</h4>
             </label>
-            <a href="#">Forget Password</a>
+          </div>
+          <div className="recall-forget">
+            <label>
+              <a href="#">Forget Password?</a>
+            </label>
           </div>
           <button>Log in</button>
+          <div className="create-forget">
+            <label>
+              <p>
+                Don't have an account? <a href="#">Register</a>
+              </p>
+            </label>
+          </div>
         </form>
       </section>
     </main>
