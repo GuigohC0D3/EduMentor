@@ -7,7 +7,7 @@ const RegisterForm = () => {
       <h1 id="title">EDUMENTOR</h1>
       <section className="wrapper">
         <form>
-          <h1>Registration</h1>
+          <h1>Register</h1>
 
           <div className="input-box">
             <div className="input-field">
