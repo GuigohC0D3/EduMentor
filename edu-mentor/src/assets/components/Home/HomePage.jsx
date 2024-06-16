@@ -11,13 +11,13 @@ function HomePage() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles._container_sqpt1_1}>
       <header>
-        <div className={styles.logo}>
+        <div className={styles._logo_sqpt1_29}>
           <img src="./src/assets/img/mundo-melhor.png" alt="Logo ICEV" />
         </div>
         <nav>
-          <ul className={styles.nav_links}>
+          <ul className={styles._nav_links_sqpt1_47}>
             <li>
               <a
                 href="#quem-somos"
@@ -76,13 +76,13 @@ function HomePage() {
             </li>
           </ul>
         </nav>
-        <div className="search-bar">
+        <div className={styles._search_bar_sqpt1_79}>
           <input type="text" placeholder="Pesquisar..." />
           <button>
             <i className="fa fa-search"></i>
           </button>
         </div>
-        <div className={styles.buttons}>
+        <div className={styles._buttons_sqpt1_125}>
           <button onClick={() => handleTabClick("processos-seletivos")}>
             Processos Seletivos
           </button>
