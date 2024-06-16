@@ -28,7 +28,7 @@ const LoginForm = () => {
           </div>
           <div className="recall-forget">
             <label>
-              <a href="#">Forget Password?</a>
+              <a href="Forget">Forget Password?</a>
             </label>
           </div>
           <button>Log in</button>
