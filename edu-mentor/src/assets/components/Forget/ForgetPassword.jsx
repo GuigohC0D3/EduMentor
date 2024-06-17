@@ -15,9 +15,7 @@ const ForgetPassword = () => {
             <input type="password" required />
             <label for="">Confirm Password</label>
           </div>
-          <button>
-            <a href="#">Send</a>
-          </button>
+          <button>Send</button>
         </form>
       </section>
     </main>

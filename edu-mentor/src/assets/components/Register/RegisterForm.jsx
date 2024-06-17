@@ -9,7 +9,7 @@ const RegisterForm = () => {
         <form>
           <h1>Register</h1>
 
-          <div className="input-box">
+          <div className="input-register">
             <div className="input-field">
               <input type="text" placeholder="Full Name" required />
             </div>
@@ -18,7 +18,7 @@ const RegisterForm = () => {
             </div>
           </div>
 
-          <div className="input-box">
+          <div className="input-register">
             <div className="input-field">
               <input type="email" placeholder="Email" required />
             </div>
@@ -38,9 +38,11 @@ const RegisterForm = () => {
             <input type="checkbox" /> I hereby declare that the above
             information provied is true and correct
           </label>
-          <button type="subimit" class="btn">
-            Register
-          </button>
+          <label>
+            {" "}
+            <input type="checkbox" /> I have read and accept the terms of use
+          </label>
+          <button type="subimit">Register</button>
         </form>
       </section>
     </main>

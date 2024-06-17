@@ -11,7 +11,7 @@ function HomePage() {
   };
 
   return (
-    <div className={styles._container_sqpt1_1}>
+    <div>
       <header>
         <div className={styles._logo_sqpt1_29}>
           <img src="./src/assets/img/mundo-melhor.png" alt="Logo ICEV" />
@@ -78,9 +78,7 @@ function HomePage() {
         </nav>
         <div className={styles._search_bar_sqpt1_79}>
           <input type="text" placeholder="Pesquisar..." />
-          <button>
-            <i className="fa fa-search"></i>
-          </button>
+          <button>Pesquisar</button>
         </div>
         <div className={styles._buttons_sqpt1_125}>
           <button onClick={() => handleTabClick("processos-seletivos")}>
@@ -96,7 +94,7 @@ function HomePage() {
       </header>
       <main className={styles.content}>
         {activeTab === "home" && (
-          <section className="hero">
+          <div className="hero">
             <div className="hero-image">
               <img src="./src/assets/img/mundo-melhor.png" alt="Hero Image" />
             </div>
@@ -106,7 +104,7 @@ function HomePage() {
               </h1>
               <p>Entre as faculdades particulares do Piauí</p>
             </div>
-          </section>
+          </div>
         )}
         {activeTab === "quem-somos" && (
           <section className="quem-somos">
