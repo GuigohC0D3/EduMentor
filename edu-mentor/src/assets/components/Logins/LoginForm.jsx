@@ -12,18 +12,18 @@ const LoginForm = () => {
           <h1>Login do Aluno</h1>
           <div class="inputbox">
             <input type="text" required />
-            <label for="">UserName</label>
+            <label for="text">UserName</label>
           </div>
           <div class="inputbox">
             <input type="email" required />
-            <label for="">Email</label>
+            <label for="email">Email</label>
           </div>
           <div class="inputbox">
             <input type="password" required />
-            <label for="">Password</label>
+            <label for="password">Password</label>
           </div>
           <div class="forget">
-            <label for="">
+            <label>
               <input type="checkbox" />
               <h4>Remember me</h4>
             </label>

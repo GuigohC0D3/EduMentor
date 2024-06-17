@@ -24,7 +24,6 @@ body {
 section {
   position: relative;
   max-width: 400px;
-    backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 20px;
   -webkit-backdrop-filter: blur(55px);
@@ -79,7 +78,7 @@ p {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   font-size: 1rem;
-  color: #ffffff;
+  color: #000;
   font-size: 1rem;
   pointer-events: none;
   -webkit-transition: .5s;
@@ -101,18 +100,7 @@ input:valid~label {
   outline: none;
   font-size: 1rem;
   padding: 0 35px 0 5px;
-  color: #ffffff;
-}
-
-.inputbox ion-icon {
-  position: absolute;
-  right: 8px;
-  color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.2rem;
-  top: 20px;
+  color: #000;
 }
 
 .forget {
