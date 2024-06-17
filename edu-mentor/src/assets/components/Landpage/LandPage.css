@@ -1,171 +1,119 @@
 .container {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4 !important;
-}
-
-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-color: #fff;
-    color: #fff;
-    padding: 1rem 0;
+    color: #000;
+    font-family: sans-serif;
+  }
+  
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-    transition: 0.4s;
-    justify-content: space-between;
-    padding: 10px 15px;
-    margin-right: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3 ease;
-}
-
-a:hover {
-    color: #37a1f7;
-}
-
-.logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: #fff;
-    margin-right: 20px;
-}
-
-.logo img {
-    width: 150px;
-    height: auto;
-}
-
-.nav_links {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+  }
+  
+  .logo {
     display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.nav_links li {
-    margin-right: 2rem;
-}
-
-.nav_links a {
-    color: #fff;
+    display: flex;
+  }
+  
+  .nav li {
+    margin-left: 20px;
+  }
+  
+  .nav a {
+    color: #000;
     text-decoration: none;
-
-}
-
-.search_bar {
-    margin-right: 2rem;
+  }
+  
+  .main {
     display: flex;
-    align-items: center;
-}
-
-.search_bar input {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #707070;
-    margin-right: 0.5rem;
-}
-
-.search_bar button {
-    padding: 0.5rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #fff;
-    color: #222;
-}
-
-.buttons {
-    display: flex;
-    margin-right: 2rem;
-}
-
-.buttons button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #247ba0;
-    color: #222;
-    margin-right: 1rem;
-}
-
-.content {
-    padding: 2rem;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    background-color: #eee;
-    padding: 2rem;
-}
-
-.hero section {
-    border: none;
-}
-
-.hero-image {
-    width: 50%;
-}
-
-.hero-image img {
+    align-items: center;
     width: 100%;
-    height: auto;
-}
-
-.hero-text {
-    width: 50%;
-    padding: 2rem;
-}
-
-.quem-somos,
-.escola-direito-aplicado,
-.escola-negocios-gestao,
-.escola-tecnologia-aplicada,
-.pos-extensao,
-.blogs-noticias,
-.fale-conosco,
-.processos-seletivos,
-.area-professor,
-.area-aluno {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-.button {
-    padding: 0.5rem 1rem;
-    border: none;
-    border-radius: 5px;
-    background-color: #222;
-    color: #fff;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 1rem 0;
+    max-width: 1200px;
+    padding: 40px 20px;
+  }
+  
+  .content {
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    header nav {
-        flex-direction: column;
-    }
-
-    header nav ul {
-        margin-top: 10px;
-    }
-
-    header nav li {
-        display: block;
-        margin: 5px 0;
-    }
-}
+  }
+  
+  .content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+  .explore {
+    background-color: #128c7e;
+    color: #000;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .explore:hover {
+    background-color: #0d7062;
+  }
+  
+  .illustration {
+    width: 50%;
+  }
+  
+  .illustration img {
+    width: 100%;
+  }
+  
+  .login {
+    background-color: #128c7e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login:hover {
+    background-color: #0d7062;
+  }
