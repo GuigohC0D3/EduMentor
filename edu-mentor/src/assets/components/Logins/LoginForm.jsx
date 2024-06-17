@@ -10,7 +10,7 @@ const LoginForm = () => {
           <h1>Login do Aluno</h1>
           <div class="inputbox">
             <input type="text" required />
-            <label for="">User Name</label>
+            <label for="">UserName</label>
           </div>
           <div class="inputbox">
             <input type="email" required />
@@ -28,7 +28,7 @@ const LoginForm = () => {
           </div>
           <div className="recall-forget">
             <label>
-              <a href="Forget">Forget Password?</a>
+              <a href="Forget">Forgot Password?</a>
             </label>
           </div>
           <button>Log in</button>
