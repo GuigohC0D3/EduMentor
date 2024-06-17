@@ -4,7 +4,9 @@ import "./LoginForm.css"; // Importando estilos
 const LoginForm = () => {
   return (
     <main id="container">
-      <h1 id="title">EDUMENTOR</h1>
+      <div>
+        <h1 id="title">EDUMENTOR</h1>
+      </div>
       <section>
         <form>
           <h1>Login do Aluno</h1>
