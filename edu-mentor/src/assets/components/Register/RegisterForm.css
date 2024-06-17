@@ -182,3 +182,17 @@ button {
             background-color: #f9f9f9;
           }
 }
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+
+    header nav li {
+        display: block;
+        margin: 5px 0;
+    }
+}

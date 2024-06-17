@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import styles from "./HomePage.module.css";
-
-console.log(styles);
+import "./HomePage.css";
 
 function HomePage() {
   const [activeTab, setActiveTab] = useState("home"); // Inicializa com a aba home
@@ -11,13 +9,13 @@ function HomePage() {
   };
 
   return (
-    <div>
+    <div className="container">
       <header>
-        <div className={styles._logo_sqpt1_29}>
+        <div className="logo">
           <img src="./src/assets/img/mundo-melhor.png" alt="Logo ICEV" />
         </div>
         <nav>
-          <ul className={styles._nav_links_sqpt1_47}>
+          <ul className="nav-links">
             <li>
               <a
                 href="#quem-somos"
@@ -76,11 +74,13 @@ function HomePage() {
             </li>
           </ul>
         </nav>
-        <div className={styles._search_bar_sqpt1_79}>
+        <div className="search-bar">
           <input type="text" placeholder="Pesquisar..." />
-          <button>Pesquisar</button>
+          <button>
+            <i className="fa fa-search"></i>
+          </button>
         </div>
-        <div className={styles._buttons_sqpt1_125}>
+        <div className="buttons">
           <button onClick={() => handleTabClick("processos-seletivos")}>
             Processos Seletivos
           </button>
@@ -92,24 +92,22 @@ function HomePage() {
           </button>
         </div>
       </header>
-      <main className={styles.content}>
+      <main className="content">
         {activeTab === "home" && (
-          <div className="hero">
+          <section className="hero">
             <div className="hero-image">
               <img src="./src/assets/img/mundo-melhor.png" alt="Hero Image" />
             </div>
             <div className="hero-text">
-              <h1>
-                EduMentor é, mais uma vez, 1º lugar no Exame de Ordem da OAB!
-              </h1>
+              <h1>ICEV é, mais uma vez, 1º lugar no Exame de Ordem da OAB!</h1>
               <p>Entre as faculdades particulares do Piauí</p>
             </div>
-          </div>
+          </section>
         )}
         {activeTab === "quem-somos" && (
           <section className="quem-somos">
             <h2>Quem Somos</h2>
-            <p>Conteúdo sobre a EduMentor</p>
+            <p>Conteúdo sobre a ICEV</p>
           </section>
         )}
         {activeTab === "escola-direito-aplicado" && (
@@ -168,7 +166,7 @@ function HomePage() {
           <section className="area-aluno">
             <h2>Área do Aluno</h2>
             <p>Conteúdo sobre a Área do Aluno</p>
-            <a href="Login" className="button">
+            <a href="/area-aluno" className="button">
               Acessar Área do Aluno
             </a>{" "}
             {/* Link para a página da Área do Aluno */}
@@ -176,7 +174,7 @@ function HomePage() {
         )}
       </main>
       <footer>
-        <p>© 2024 EduMentor - Todos os direitos reservados</p>
+        <p>© 2023 ICEV - Todos os direitos reservados</p>
       </footer>
     </div>
   );
