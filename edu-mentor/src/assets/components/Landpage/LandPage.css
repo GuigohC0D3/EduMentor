@@ -12,8 +12,26 @@ header {
     align-items: center;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.4s;
+    justify-content: space-between;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3 ease;
+}
+
+a:hover {
+    color: #37a1f7;
+}
+
 .logo {
-    margin-left: 2rem;
+    font-size: 32px;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 20px;
 }
 
 .logo img {
@@ -35,6 +53,7 @@ header {
 .nav_links a {
     color: #fff;
     text-decoration: none;
+
 }
 
 .search_bar {
@@ -48,7 +67,7 @@ header {
     border: none;
     border-radius: 5px;
     background-color: #fff;
-    color: #222;
+    color: #707070;
     margin-right: 0.5rem;
 }
 
@@ -69,7 +88,7 @@ header {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #247ba0;
     color: #222;
     margin-right: 1rem;
 }
@@ -84,6 +103,10 @@ header {
     justify-content: space-between;
     background-color: #eee;
     padding: 2rem;
+}
+
+.hero section {
+    border: none;
 }
 
 .hero-image {

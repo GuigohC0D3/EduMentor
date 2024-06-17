@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./HomePage.css";
+import "./LandPage.css";
 
-function HomePage() {
+function LandPage() {
   const [activeTab, setActiveTab] = useState("home"); // Inicializa com a aba home
 
   const handleTabClick = (tab) => {
@@ -12,29 +12,26 @@ function HomePage() {
     <div className="container">
       <header>
         <div className="logo">
-          <img src="./src/assets/img/mundo-melhor.png" alt="Logo ICEV" />
+          <img src="./src/assets/img/mundo-melhor.png" alt="Logo EduMentor" />
         </div>
         <nav>
           <ul className="nav-links">
             <li>
-              <a
-                href="#quem-somos"
-                onClick={() => handleTabClick("quem-somos")}
-              >
-                Quem Somos
+              <a href="Sobre Nos" onClick={() => handleTabClick("quem-somos")}>
+                Sobre Nos
               </a>
             </li>
             <li>
               <a
-                href="#escola-direito-aplicado"
+                href="Menu"
                 onClick={() => handleTabClick("escola-direito-aplicado")}
               >
-                Escola de Direito Aplicado
+                Menu Inicial
               </a>
             </li>
             <li>
               <a
-                href="#escola-negocios-gestao"
+                href="#escola-negocios"
                 onClick={() => handleTabClick("escola-negocios-gestao")}
               >
                 Escola de Negócios e Gestão
@@ -76,9 +73,7 @@ function HomePage() {
         </nav>
         <div className="search-bar">
           <input type="text" placeholder="Pesquisar..." />
-          <button>
-            <i className="fa fa-search"></i>
-          </button>
+          <button>Pesquisar</button>
         </div>
         <div className="buttons">
           <button onClick={() => handleTabClick("processos-seletivos")}>
@@ -99,7 +94,9 @@ function HomePage() {
               <img src="./src/assets/img/mundo-melhor.png" alt="Hero Image" />
             </div>
             <div className="hero-text">
-              <h1>ICEV é, mais uma vez, 1º lugar no Exame de Ordem da OAB!</h1>
+              <h1>
+                EduMentor é, mais uma vez, 1º lugar no Exame de Ordem da OAB!
+              </h1>
               <p>Entre as faculdades particulares do Piauí</p>
             </div>
           </section>
@@ -107,7 +104,7 @@ function HomePage() {
         {activeTab === "quem-somos" && (
           <section className="quem-somos">
             <h2>Quem Somos</h2>
-            <p>Conteúdo sobre a ICEV</p>
+            <p>Conteúdo sobre o EduMentor</p>
           </section>
         )}
         {activeTab === "escola-direito-aplicado" && (
@@ -154,10 +151,10 @@ function HomePage() {
         )}
         {activeTab === "area-professor" && (
           <section className="area-professor">
-            <h2>Área do Professor</h2>
-            <p>Conteúdo sobre a Área do Professor</p>
+            <h2>Área do Tutor</h2>
+            <p>Conteúdo sobre a Área dos Tutores</p>
             <a href="/area-professor" className="button">
-              Acessar Área do Professor
+              Acessar Área do Tutor
             </a>{" "}
             {/* Link para a página da Área do Professor */}
           </section>
@@ -166,7 +163,7 @@ function HomePage() {
           <section className="area-aluno">
             <h2>Área do Aluno</h2>
             <p>Conteúdo sobre a Área do Aluno</p>
-            <a href="/area-aluno" className="button">
+            <a href="Login" className="button">
               Acessar Área do Aluno
             </a>{" "}
             {/* Link para a página da Área do Aluno */}
@@ -174,10 +171,10 @@ function HomePage() {
         )}
       </main>
       <footer>
-        <p>© 2023 ICEV - Todos os direitos reservados</p>
+        <p>© 2023 EduMentor - Todos os direitos reservados</p>
       </footer>
     </div>
   );
 }
 
-export default HomePage;
+export default LandPage;
