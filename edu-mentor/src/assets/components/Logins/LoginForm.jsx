@@ -33,7 +33,11 @@ const LoginForm = () => {
               <a href="Forget">Forgot Password?</a>
             </label>
           </div>
-          <button>Log in</button>
+          <button>
+            <a href="Perfil" className="lgn">
+              Login
+            </a>
+          </button>
           <div className="create-forget">
             <label>
               <p>
