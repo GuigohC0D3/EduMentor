@@ -10,7 +10,11 @@ const HomePage = () => {
             <nav className="navbar">
               <ul>
                 <li>
-                <img className = "logo" src="./src/assets/img/logo.png" alt="EduMentor Logo" />
+                  <img
+                    className="logo"
+                    src="./src/assets/img/logo.png"
+                    alt="EduMentor Logo"
+                  />
                 </li>
                 <li>
                   <a href="#about">Sobre</a>
@@ -25,7 +29,7 @@ const HomePage = () => {
                   <a href="#contact">Contato</a>
                 </li>
                 <li>
-                  <a href="#contact">Biblioteca</a>
+                  <a href="biblioteca.html">Biblioteca</a>
                 </li>
               </ul>
             </nav>
