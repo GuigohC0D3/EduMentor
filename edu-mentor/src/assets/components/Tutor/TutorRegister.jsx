@@ -19,7 +19,7 @@ const TutorRegister = () => {
             </div>
             <div className="input-field">
               <label>
-                <input type="text" placeholder="UserName" required />
+                <input type="text" placeholder="RA" required />
               </label>
             </div>
           </div>
