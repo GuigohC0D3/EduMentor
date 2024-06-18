@@ -5,7 +5,7 @@ const LoginForm = () => {
   return (
     <main id="container">
       <div>
-        <h1 id="title">EDUMENTOR</h1>
+        <h1  style={{ color: 'white' }} id="title" >EDUMENTOR</h1>
       </div>
       <section>
         <form>

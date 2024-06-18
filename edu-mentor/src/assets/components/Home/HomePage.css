@@ -1,103 +1,168 @@
-/* App.css */
+/* Reset básico para remover margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-  }
-  
-  .header {
-    background: #333;
-    color: white;
-    padding: 1rem 0;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    float: left;
-  }
-  
-  .nav {
-    float: right;
-  }
-  
-  .nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav ul li {
-    display: inline;
-    margin-left: 20px;
-  }
-  
-  .nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .hero {
-    background: #5c6bc0;
-    color: white;
-    padding: 2rem 0;
-    text-align: center;
-  }
-  
-  .cta-button {
-    background: #ff4081;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-  }
-  
-  .about, .courses, .mentors, .contact {
-    padding: 2rem 0;
-  }
-  
-  .course-list, .mentor-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-  .course-item, .mentor-item {
-    background: white;
-    padding: 1rem;
-    margin: 0.5rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex: 0 1 calc(33.333% - 1rem);
-    box-sizing: border-box;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 1rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-  }
-  
-  .contact-form button {
-    background: #5c6bc0;
-    color: white;
-    padding: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
+  font-family: Arial, sans-serif;
+}
+
+/* Estilo da navbar */
+.navbar {
+  background-color: #247ba0;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 1rem;
+}
+
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.navbar a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+/* Espaçamento para garantir que o conteúdo não fique escondido atrás da navbar fixa */
+.container {
+  padding: 4rem 2rem;
+  margin-top: 4rem;
+}
+
+.borda{
+  border: 2px solid #247ba0;
+}
+
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: rgb(247, 247, 247);
+}
+
+.logo{
+  width: 100px;
+  height: auto;
+}
+
+.titulo{
+  color: rgb(247, 247, 247);
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #247ba0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #006494;
+  color: white;
+}
+
+.course-list, .mentor-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.course-item, .mentor-item {
+  flex: 1 1 30%;
+  margin: 1rem;
+  padding: 1rem;
+  border: 2px solid #247ba0;
+  border-radius: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  background: white;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  padding: 0.5rem 1rem;
+  background: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #006494;
+}
+
+.bemvindo{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 400px;
+}
+
+.cursos{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.contato{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.mentores{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #006494;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.text-footer{
+  color:white;
+}

@@ -12,7 +12,7 @@ function LandPage() {
     <div className="container">
       <header className="header">
         <div className="logo">
-          <img src="./src/assets/img/mundo-melhor.png" alt="EduMentor Logo" />
+          <img src="./src/assets/img/logo.png" alt="EduMentor Logo" />
           <h1>EduMentor</h1>
         </div>
         <nav className="nav">
@@ -37,7 +37,7 @@ function LandPage() {
         </div>
         <div className="illustration">
           <img
-            src="./src/assets/img/mundo-melhor.png"
+            src="./src/assets/img/logo-melhor.png"
             alt="Classroom Illustration"
           />
         </div>
