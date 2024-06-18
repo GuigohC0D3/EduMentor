@@ -8,6 +8,7 @@ import PerfilAluno from "./assets/components/Perfil/PerfilAluno";
 import HomePage from "./assets/components/Home/HomePage";
 import TutorLogin from "./assets/components/Tutor/TutorLogin";
 import TutorRegister from "./assets/components/Tutor/TutorRegister";
+import TutorPerfil from "./assets/components/Tutor/TutorPerfil";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/Forget" element={<ForgetPassword />} />
         <Route path="/Land" element={<LandPage />} />
         <Route path="/Perfil" element={<PerfilAluno />} />
+        <Route path="/TutorPerfil" element={<TutorPerfil />} />
         <Route path="/Home" element={<HomePage />} />
         <Route path="*" element={<LandPage />} />
       </Routes>

@@ -24,6 +24,9 @@ const HomePage = () => {
                 <li>
                   <a href="#contact">Contato</a>
                 </li>
+                <li>
+                  <a href="#contact">Biblioteca</a>
+                </li>
               </ul>
             </nav>
           </div>
