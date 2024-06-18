@@ -1,0 +1,156 @@
+body {
+    height: 100vh; /* ajusta a altura do body para ocupar toda a tela */
+    display: flex; /* torna o body um container flexível */
+    justify-content: center; /* centraliza os elementos horizontalmente */
+    align-items: center; /* centraliza os elementos verticalmente */
+    flex-direction: column; /* define a direção dos elementos como coluna */
+  }
+
+.account-settings {
+    max-width: 700px;
+    margin: 50px auto; 
+    padding: 70px;
+    width: 200%;
+    height: 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .account-settings h1 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .general {
+    margin-top: 20px;
+  }
+  
+  .general h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .profile-image {
+    margin-bottom: 20px;
+  }
+  
+  .profile-image label {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .profile-image.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+  }
+  
+  .profile-image.placeholder p {
+    font-size: 14px;
+    color: #999;
+  }
+  
+  .profile-image input[type="file"] {
+    display: none;
+  }
+  
+  .profile-image.reset-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .profile-image.reset-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .username,.email,.company {
+    margin-bottom: 20px;
+  }
+  
+  .username label,.email label,.company label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .username input,.email input,.company input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .email p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+  }
+  
+  .email.resend-confirmation-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #666;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .email.resend-confirmation-button:hover {
+    background-color: #413e3e;
+  }
+  
+  .save-changes-button,.cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #337ab7;
+    cursor: pointer;
+  }
+  
+  .save-changes-button:hover,.cancel-button:hover {
+    background-color: #23527c;
+  }
+  
+  .cancel-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    cursor: pointer;
+  }
+  
+  .cancel-button:hover {
+    background-color: #666;
+  }

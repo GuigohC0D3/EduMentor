@@ -37,7 +37,7 @@ function LandPage() {
         </div>
         <div className="illustration">
           <img
-            src="./src/assets/img/logo-melhor.png"
+            src="./src/assets/img/logo.png"
             alt="Classroom Illustration"
           />
         </div>
