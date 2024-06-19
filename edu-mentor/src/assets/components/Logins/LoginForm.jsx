@@ -10,7 +10,7 @@ const LoginForm = () => {
           src="./src/assets/img/logo.png"
           alt="EduMentor Logo"
         />
-        <h1 style={{ color: "white" }} id="title">
+        <h1 style={{ color: "white" }} id="title-lgn">
           EDUMENTOR
         </h1>
       </div>
@@ -41,7 +41,7 @@ const LoginForm = () => {
             </label>
           </div>
           <button class="btn">
-            <a href="Perfil" className="lgn">
+            <a href="Home" className="lgn">
               Login
             </a>
           </button>

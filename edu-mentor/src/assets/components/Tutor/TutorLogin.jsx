@@ -12,6 +12,7 @@ const TutorLogin = () => {
       <section>
         <form>
           <h1>Login do Tutor</h1>
+          <img src="" alt="" />
           <div class="inputbox">
             <input type="text" required />
             <label for="text">R.A</label>

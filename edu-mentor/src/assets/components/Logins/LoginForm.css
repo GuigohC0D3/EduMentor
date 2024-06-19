@@ -67,8 +67,9 @@ p {
   border-radius: 8px;
 }
 
-#title {
+#title-lgn {
   padding-bottom: 45px;
+  top: 30px;
 }
 .inputbox {
   position: relative;
