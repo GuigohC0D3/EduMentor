@@ -42,9 +42,9 @@ function TutorPerfil() {
           </button>
         </div>
         <div className="username">
-          <label htmlFor="username-input">Username</label>
+          <label htmlFor="username-input">R.A</label>
           <input
-            type="text"
+            type="phone"
             id="username-input"
             value={username}
             onChange={(e) => setUsername(e.target.value)}

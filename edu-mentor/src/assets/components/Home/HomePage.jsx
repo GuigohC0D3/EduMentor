@@ -1,5 +1,5 @@
 import React from "react";
-import mentores from './Mentores';
+import mentores from "./Mentores";
 import "./HomePage.css"; // Importando estilos
 
 const HomePage = () => {
@@ -18,19 +18,16 @@ const HomePage = () => {
                   />
                 </li>
                 <li>
-                  <a href="#about">Sobre</a>
+                  <a href="Sobre">Sobre</a>
                 </li>
                 <li>
-                  <a href="#courses">Cursos</a>
+                  <a href="TutorPerfil">Perfil Tutor</a>
                 </li>
                 <li>
-                  <a href="TutorLogin">Tutores</a>
+                  <a href="Perfil">Perfil</a>
                 </li>
                 <li>
-                  <a href="#contact">Contato</a>
-                </li>
-                <li>
-                <a href="Biblioteca">Biblioteca</a>
+                  <a href="Biblioteca">Biblioteca</a>
                 </li>
               </ul>
             </nav>
@@ -42,8 +39,8 @@ const HomePage = () => {
               Plataforma de mentoria e cursos online para potencializar seus
               estudos
             </p>
-            <a href="#courses" className="cta-button">
-              Ver Cursos
+            <a href="Search" className="cta-button">
+              Buscar Tutores
             </a>
           </div>
 

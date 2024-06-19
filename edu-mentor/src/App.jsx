@@ -14,6 +14,7 @@ import AnatomiaHumana from "./assets/components/Biblioteca/AnatomiaHumana";
 import SearchPage from "./assets/components/Search/SearchPage";
 import CalculoForm from "./assets/components/Biblioteca/CalculoForm";
 import Acompanhamento from "./assets/components/Acompanhamento/Acompanhamento";
+import AboutPage from "./assets/components/Sobre/Sobre";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/AnatomiaHumana" element={<AnatomiaHumana />} />
         <Route path="/Search" element={<SearchPage />} />
         <Route path="/Acompanhamento" element={<Acompanhamento />} />
+        <Route path="/Sobre" element={<AboutPage />} />
         <Route path="/CalculoForm" element={<CalculoForm />} />
       </Routes>
     </BrowserRouter>
