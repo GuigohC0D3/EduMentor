@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LandPage.css";
 
 function LandPage() {
-  const [activeTab, setActiveTab] = useState("home"); 
+  const [activeTab, setActiveTab] = useState("home");
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -37,7 +37,9 @@ function LandPage() {
             Elevate Education Together: Connecting Tutors and Students
             Seamlessly!
           </p>
-          <button className="button">Explore →</button>
+          <button className="button">
+            <a href="Home">Explore →</a>
+          </button>
         </div>
         <div className="illustration">
           <img src="./src/assets/img/logo.png" alt="Classroom Illustration" />
