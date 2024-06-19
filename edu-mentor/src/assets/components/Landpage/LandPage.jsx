@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./LandPage.css";
 
 function LandPage() {
-  const [activeTab, setActiveTab] = useState("home"); // Inicializa com a aba home
+  const [activeTab, setActiveTab] = useState("home"); 
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
@@ -10,17 +10,21 @@ function LandPage() {
 
   return (
     <div className="container">
-      <header className="header">
+      <header className="header borda">
         <div className="logo">
-          <img src="./src/assets/img/logo.png" alt="EduMentor Logo" />
+          <div className="logo">
+            <img src="./src/assets/img/logo.png" alt="EduMentor Logo" />
+          </div>
           <h1>EduMentor</h1>
         </div>
         <nav className="nav">
           <ul>
             <li>
-              <a href="Login" className="login">
-                Login
-              </a>
+              <button className="button">
+                <a href="Login" className="button text-button">
+                  Login
+                </a>
+              </button>
             </li>
           </ul>
         </nav>
@@ -33,13 +37,10 @@ function LandPage() {
             Elevate Education Together: Connecting Tutors and Students
             Seamlessly!
           </p>
-          <button className="explore">Explore →</button>
+          <button className="button">Explore →</button>
         </div>
         <div className="illustration">
-          <img
-            src="./src/assets/img/logo.png"
-            alt="Classroom Illustration"
-          />
+          <img src="./src/assets/img/logo.png" alt="Classroom Illustration" />
         </div>
       </main>
     </div>

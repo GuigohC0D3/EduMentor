@@ -1,0 +1,80 @@
+/* Dashboard.css */
+
+#dashboard-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .chart-section, .activities-section, .chat-section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .chart-placeholder, .chat-placeholder {
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .activities-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .activities-table th, .activities-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .activities-table th {
+    background-color: #f0f0f0;
+  }
+  
+  .activities-table td {
+    background-color: #fff;
+  }
+  
+  .activities-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  

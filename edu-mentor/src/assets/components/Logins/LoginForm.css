@@ -21,6 +21,11 @@ body {
   background: linear-gradient(to bottom, #13293d, #247ba0, #006494);
 }
 
+.logo{
+  width: 100px;
+  height: auto;
+}
+
 section {
   position: relative;
   max-width: 400px;
@@ -278,7 +283,6 @@ h1 {
   color: white;
   text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
   header nav {

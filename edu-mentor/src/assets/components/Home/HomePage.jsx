@@ -1,4 +1,5 @@
 import React from "react";
+import mentores from './Mentores';
 import "./HomePage.css"; // Importando estilos
 
 const HomePage = () => {
@@ -23,13 +24,13 @@ const HomePage = () => {
                   <a href="#courses">Cursos</a>
                 </li>
                 <li>
-                  <a href="#mentors">Mentores</a>
+                  <a href="TutorLogin">Tutores</a>
                 </li>
                 <li>
                   <a href="#contact">Contato</a>
                 </li>
                 <li>
-                  <a href="biblioteca.html">Biblioteca</a>
+                <a href="Biblioteca">Biblioteca</a>
                 </li>
               </ul>
             </nav>
@@ -83,20 +84,16 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="mentores">
-            <h3>Nossos Mentores</h3>
-            <div className="mentor-list">
-              <div className="mentor-item">
-                <h4>João Silva</h4>
-                <p>Especialista em Matemática</p>
-              </div>
-              <div className="mentor-item">
-                <h4>Maria Oliveira</h4>
-                <p>Especialista em Programação</p>
-              </div>
-              <div className="mentor-item">
-                <h4>Carlos Souza</h4>
-                <p>Especialista em Física</p>
+          <div>
+            <div className="mentores">
+              <h3>Nossos Mentores</h3>
+              <div className="mentor-list">
+                {mentores.map((mentor) => (
+                  <div className="mentor-item" key={mentor.id}>
+                    <h4>{mentor.nome}</h4>
+                    <p>Especialista em {mentor.especialidade}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

@@ -1,11 +1,18 @@
 import React from "react";
-import "./LoginForm.css"; // Importando estilos
+import "./LoginForm.css";
 
 const LoginForm = () => {
   return (
     <main id="container">
-      <div>
-        <h1  style={{ color: 'white' }} id="title" >EDUMENTOR</h1>
+      <div className="cabecalho borda">
+        <img
+          className="logo"
+          src="./src/assets/img/logo.png"
+          alt="EduMentor Logo"
+        />
+        <h1 style={{ color: "white" }} id="title">
+          EDUMENTOR
+        </h1>
       </div>
       <section>
         <form>

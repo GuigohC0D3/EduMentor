@@ -47,7 +47,8 @@ body {
 /* Espaçamento para garantir que o conteúdo não fique escondido atrás da navbar fixa */
 .container {
   padding: 4rem 2rem;
-  margin-top: 4rem;
+  margin-top: 40rem;
+  margin-bottom: 10rem;
 }
 
 .borda{
