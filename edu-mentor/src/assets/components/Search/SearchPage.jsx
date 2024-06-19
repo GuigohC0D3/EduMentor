@@ -1,11 +1,11 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback } from "react";
 import "./SearchPage.css";
 
 const SearchPage = () => {
   const [showPopup, setShowPopup] = useState(false);
   const [lessonMarked, setLessonMarked] = useState(false);
-  const [image, setImage] = useState('');
-  const [title, setTitle] = useState('');
+  const [image, setImage] = useState("");
+  const [title, setTitle] = useState("");
 
   const handleBlockClick = (image, title) => {
     setShowPopup(true);
@@ -33,20 +33,44 @@ const SearchPage = () => {
       </nav>
       <main id="post">
         <div className="container">
-          <div className="tutores" onClick={() => handleBlockClick('/src/assets/img/ProfessorMatematica.jpeg', 'Professor Matemática')}>
+          <div
+            className="tutores"
+            onClick={() =>
+              handleBlockClick(
+                "/src/assets/img/ProfessorMatematica.jpeg",
+                "Professor Matemática"
+              )
+            }
+          >
             <h3>Professor de Matemática</h3>
             <img src="/src/assets/img/ProfessorMatematica.jpeg" alt="" />
             <h2>João Silva</h2>
           </div>
-          <div className="tutores" onClick={() => handleBlockClick('/src/assets/img/ProfessoraFisica.jpeg', 'Professor Física')}>
+          <div
+            className="tutores"
+            onClick={() =>
+              handleBlockClick(
+                "/src/assets/img/ProfessoraFisica.jpeg",
+                "Professor Física"
+              )
+            }
+          >
             <h3>Professora de Física</h3>
             <img src="/src/assets/img/ProfessoraFisica.jpeg" alt="" />
             <h2>Maria Oliveira</h2>
           </div>
-          <div className="tutores" onClick={() => handleBlockClick('/src/assets/img/MestreCristOvao.jpeg', 'Professor de Programa')}>
+          <div
+            className="tutores"
+            onClick={() =>
+              handleBlockClick(
+                "/src/assets/img/Guilherme.jpeg",
+                "Professor de Programa"
+              )
+            }
+          >
             <h3>Mestre de Programa</h3>
-            <img src="/src/assets/img/MestreCristOvao.jpeg" alt="" />
-            <h2>Christ ✞ Ovão</h2>
+            <img src="/src/assets/img/Guilherme.jpeg" alt="" />
+            <h2>Guih ✞ Lherm</h2>
           </div>
         </div>
         {showPopup && (
