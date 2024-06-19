@@ -48,7 +48,12 @@ const LoginForm = () => {
           <div className="create-forget">
             <label>
               <p>
-                Don't have an account? <a href="Register">Register</a>
+                Você não possui uma conta? <a href="Register"> Register</a>
+              </p>
+            </label>
+            <label>
+              <p>
+                Você é um tutor?<a href="TutorLogin"> Login</a>
               </p>
             </label>
           </div>

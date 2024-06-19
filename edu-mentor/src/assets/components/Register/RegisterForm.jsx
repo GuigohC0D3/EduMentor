@@ -135,14 +135,9 @@ const RegisterForm = () => {
               </label>
             </div>
           </div>
-
           <label>
-            <input type="checkbox" required /> I hereby declare that the above
-            information provided is true and correct
-          </label>
-          <label>
-            <input type="checkbox" required /> I have read and accept the terms
-            of use
+            <input type="checkbox" required />
+            Li e aceito os termos de uso
           </label>
           <button type="submit">
             <a href="Login">Register</a>

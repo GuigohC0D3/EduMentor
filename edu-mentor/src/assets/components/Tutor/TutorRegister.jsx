@@ -50,15 +50,9 @@ const TutorRegister = () => {
               </label>
             </div>
           </div>
-
           <label>
             {" "}
-            <input type="checkbox" /> I hereby declare that the above
-            information provied is true and correct
-          </label>
-          <label>
-            {" "}
-            <input type="checkbox" /> I have read and accept the terms of use
+            <input type="checkbox" /> Li e aceito os termos de uso
           </label>
           <button type="subimit">Register</button>
         </form>

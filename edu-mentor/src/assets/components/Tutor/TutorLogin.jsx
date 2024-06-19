@@ -37,14 +37,14 @@ const TutorLogin = () => {
             </label>
           </div>
           <button class="btn">
-            <a href="Perfil" className="lgn">
+            <a href="Home" className="lgn">
               Login
             </a>
           </button>
           <div className="create-forget">
             <label>
               <p>
-                Don't have an account? <a href="TutorRegister">Register</a>
+                Você não possui uma conta? <a href="TutorRegister">Register</a>
               </p>
             </label>
           </div>
